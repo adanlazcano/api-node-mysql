@@ -1,0 +1,33 @@
+
+@api = http://localhost:3000/api/books
+
+
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    
+    "title" : "from hell",
+    "autor" : "johnny Deep",
+    "edition": "1",
+}
+
+###
+GET {{api}}/1
+
+###
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "title":"no dummies",
+    "edition":4
+}
+
+###
+DELETE {{api}}/2
+
+
